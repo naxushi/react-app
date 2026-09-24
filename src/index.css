@@ -4,8 +4,9 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f2f3f5;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: #EEE2DC;
+  color: #123C69;
 }
 
 button {
@@ -18,35 +19,41 @@ button {
 
 /* HEADER */
 .header {
-  background: #111827;
-  color: white;
+  background: #ac3b61; 
+  color: #eee2dc;
   text-align: center;
   padding: 40px 20px;
+  border-bottom: 4px solid #EDC7B7; 
 }
 
 .header h1 {
   margin: 0 0 10px;
   font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .header p {
   margin: 0;
-  color: #9ca3af;
+  color: #EDC7B7; 
+  font-size: 16px;
 }
 
 /* MAIN */
 main {
   max-width: 700px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 /* PROFILE */
 .profile-card {
-  background: white;
+  background: #ffffff; 
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(18, 60, 105, 0.08); 
+  border: 1px solid #BAB2B5; 
 }
 
 .profile {
@@ -54,7 +61,14 @@ main {
   align-items: center;
   gap: 15px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #BAB2B5; 
+}
+
+img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #AC3B61; 
 }
 
 .avatar {
@@ -62,8 +76,9 @@ main {
   height: 55px;
   display: flex;
   align-items: center;
-  background: #111827;
-  color: white;
+  justify-content: center; 
+  background: #123C69;
+  color: #EEE2DC; 
   border-radius: 50%;
   font-size: 24px;
   font-weight: bold;
@@ -71,17 +86,18 @@ main {
 
 .profile-info h2 {
   margin: 0 0 5px;
+  color: #123C69; 
 }
 
 .profile-info p {
   margin: 0;
-  color: #6b7280;
+  color: #BAB2B5;
 }
 
 /* POST */
 .post {
   padding: 25px 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #BAB2B5;
 }
 
 .post:last-child {
@@ -91,20 +107,52 @@ main {
 .post h2 {
   margin: 0 0 12px;
   font-size: 22px;
+  color: #123C69; 
 }
 
 .post-text {
   margin: 0 0 10px;
-  color: #4b5563;
+  color: #4a4a4a; 
   line-height: 1.6;
 }
 
 .post-author {
   margin: 0;
-  color: #9ca3af;
+  color: #AC3B61; 
   font-size: 14px;
+  font-weight: 600;
 }
 
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #BAB2B5; 
+}
+.post-form input {
+  color:#123C69;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.post-form textarea {
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#123C69;
+}
+.post-form button {
+  border-radius: 10px;
+  background-color: #EDC7B7;
+  color:#123C69;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.delete-button {
+  margin-top: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #ac3b61;
+  color: #EDC7B7;
+}
 /* ACTIONS */
 .actions {
   display: flex;
@@ -114,16 +162,19 @@ main {
 
 .actions button {
   border: none;
-  background: #f3f4f6;
+  background: #BAB2B5; 
+  color: #123C69; 
   padding: 10px 18px;
   border-radius: 10px;
   font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .actions button:hover {
-  background: #e5e7eb;
+  background: #AC3B61;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
