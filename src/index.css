@@ -181,3 +181,51 @@ img {
 .actions button:active {
   transform: translateY(0);
 }
+
+/* INFO */
+
+.Info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: left;
+    font-family: inherit;
+}
+
+.Info h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #123C69;
+}
+
+.Info h2 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #4a4a4a;
+}
+
+.Info ol {
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.Info ol li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.footer {
+    background-color: #fdf1e7;
+    border-radius: 8px;
+    text-align: center;
+    color: #123C69;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer p:first-child {
+    font-weight: bold;
+}
