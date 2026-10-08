@@ -64,7 +64,7 @@ function ProfileCard() {
         </form>
 
         {posts.map((post) => (
-            <Post key={post.id} author={post.author} title={post.title}  likes={17} text={post.text} id={post.id} onDelete={deletePost} />
+            <Post key={post.id} author={post.author} title={post.title}  likes={17} text={post.text} id={post.id} onDelete={deletePost}/>
         ))}
         {/* <Post author="Viktor" title="Study React for frontend"  likes={17} text="какой-то осмысленный текст" />
         <Post author="Viktor" title="Im going become a fullstack developer"  likes={17} text="какой-то осмысленный текст" /> */}
